@@ -1,23 +1,36 @@
 
 	<style>	
+	/* Colors */
+		
+/* 	#75abe7 - light blue
+	#ffffff - white
+	#f6f3c0 - light/pastel yellow
+	#48659c - dark blue
+	#444 - dark gray
+	#111 - black
+		
+*/
 .body {
-     margin: 0em;
+	margin: 0em;
+	background: #ffffff;
+	
+
 }
 
 .page {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    overflow-y: auto;
-    z-index: 0;
-    background-color: hsl(0,0%,100%);
+    	width: 100vw;
+    	height: 100vh;
+    	position: fixed;
+    	top: 0;
+    	left: -100vw;
+    	overflow-y: auto;
+    	z-index: 0;
+    	background-color: hsl(0,0%,100%);
 }
 
   .page:target {
-    left: 0vw;
-    z-index: 1;
+	left: 0vw;
+	z-index: 1;
 }
 #box {
 				height: 75px;
@@ -168,6 +181,10 @@ awake. </label><br>
 
 
 <script>
+  var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+	        alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+		console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.
+		
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwTyhITsooZVhWcQbtJ5lwWLw6CW1uwuNouV5Pw4SkZQKPdXGHj/exec'
   const form = document.forms['chalder']
   
